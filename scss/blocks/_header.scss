@@ -1,0 +1,29 @@
+.scroll {
+  overflow: hidden;
+}
+
+.header__btn {
+  display: none;
+}
+
+.header__btn {
+  display: block;
+  background-image: url("../images/burger.svg");
+  width: 26px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+}
+
+.show-bg .nav {
+  display: block;
+}
+
+.show-bg .header__btn {
+  background-image: url("../images/burger-close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 21px;
+  height: 21px;
+}

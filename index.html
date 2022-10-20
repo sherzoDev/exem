@@ -20,45 +20,41 @@
 
     <div class="hero-bg-img">
         <!-- Site Header Start -->
-        <header class="header m-0 p-0">
+        <header>
             <div class="container">
-                <div class="header-wrapper d-flex justify-content-between align-items-center">
-                    <button type="button" class="theme-btn-mobile"></button>
-                    <div class="navbar-desk">
-                        <a href="./index.html" class="header__logo">
-                            <img src="./images/logo.svg" alt="Site Logo" width="160" height="32">
-                        </a>
-                        <nav class="nav">
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a class="nav_link text-decoration-none text-white" href="#">
-                                        Home
-                                    </a>
+                <div class="header-wrapper d-flex justify-content-between align-items-center pt-5">
+                    <button class="dark-mode-btn border-0 bg-transparent d-sm-none">
+                        <img src="./images/theme-btn.svg" alt="theme-btn">
+                    </button>
+                    <a class="site-logo" href="./index.html">
+                        <img src="./images/logo.svg" alt="Logo">
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <nav class="nav-open">
+                            <ul class="nav-list mb-0 list-unstyled d-flex-column d-sm-flex align-items-center ">
+                                <li class="nav-item-active">
+                                    <a class="text-white text-decoration-none nav-link" href="#">Home</a>
                                 </li>
-                                <li class="nav__item">
-                                    <a class="nav_link text-decoration-none text-white" href="#">
-                                        About Us
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="text-white text-decoration-none nav-link" href="#">About us</a>
                                 </li>
-                                <li class="nav__item">
-                                    <a class="nav_link text-decoration-none text-white" href="#">
-                                        Pricing
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="text-white text-decoration-none nav-link" href="#">Services</a>
                                 </li>
-                                <li class="nav__item">
-                                    <a class="nav_link text-decoration-none text-white" href="#">
-                                        Contact Us
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="text-white text-decoration-none nav-link" href="#">News</a>
                                 </li>
                             </ul>
-                            <button type="button" class="theme-btn-desktop"></button>
                         </nav>
+                        <button class="dark-btn border-0 bg-transparent d-none d-md-block">
+                            <img src="./images/theme-btn.svg" alt="">
+                        </button>
                     </div>
-                    <button type="button" class="header__btn"></button>
+                    <button class="header-burger border-0 bg-transparent d-sm-none">
+                    </button>
                 </div>
             </div>
         </header>
-        <!-- Site Header Finish -->
 
         <!-- Site Hero Start -->
         <section class="hero">
@@ -106,7 +102,8 @@
                             </h3>
                             <div class="software-item-box">
                                 <p class="software-item-text">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
                                     consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                                 </p>
                             </div>
@@ -120,7 +117,8 @@
                             </h3>
                             <div class="software-item-box">
                                 <p class="software-item-text">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
                                     consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                                 </p>
                             </div>
@@ -150,22 +148,152 @@
         <!-- Software Finish -->
         <!-- Protection Start -->
         <section class="protection">
-            <div class="protection-inner">
-                <div class="container">
-                    <h2 class="protection-title">
-                        Easy Advance Protection
-                    </h2>
-                    <p class="protection-text">
-                        Use marketing automation to identify hot leads and email your sales team telling them to follow
-                        up. Nurture and contact leads at the opportune time to maximize.
-                    </p>
-                    <a href="#" class="btn protection-btn">
-                        Read more
-                    </a>
+            <div class="container">
+                <div class="protection-wrapper">
+                    <div
+                        class="text-center d-flex flex-column flex-column-reverse d-md-flex flex-md-row align-items-center justify-content-between">
+                        <div class="text-md-start">
+                            <h3 class="">Easy Advance Protection</h3>
+                            <p class="mb-5">Use marketing automation to identify hot leads and email your sales team
+                                telling them to follow up. Nurture and contact leads at the opportune time to maximize.
+                            </p>
+                            <a class="text-decoration-none" href="">Read more</a>
+                        </div>
+                        <img class="w-100 ms-md-5" src="./images/protection-bg.svg" alt="img">
+                    </div>
+                    <div
+                        class="text-center d-flex flex-column flex-column-reverse d-md-flex align-items-center flex-md-row flex-md-row-reverse justify-content-between">
+                        <div class="text-md-start">
+                            <h3 class="">Advance Protection Mode Easy </h3>
+                            <p class="mb-5">Use marketing automation to identify hot leads and email your sales team
+                                telling them to follow up. Nurture and contact leads at the opportune time to maximize.
+                            </p>
+                            <a class="text-decoration-none" href="#">Read more</a>
+                        </div>
+                        <img class="w-100" src="./images/protection-bg-bottom.svg" alt="img">
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Protection Finish -->
+        <!-- Pricing Start -->
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing-wrapper mw-100 text-center" style="margin-bottom: 80px;">
+                    <h2 class="pricing-heading fw-bold fs-1 mb-3">
+                        Simple and flexible pricing
+                    </h2>
+                    <p class="pricing-text fw-normal fs-6">
+                        Start with Support and build your own custom solution or choose The Suite
+                    </p>
+                </div>
+                <div class="pricing-card-wrapper d-flex align-content-center justify-content-between">
+                    <div class="card" style="width: 405px;">
+                        <div class="card-body">
+                            <div class="card-text-wrapper text-center">
+                                <p class="card-texts mb-2" style="font-size: 20px;">
+                                    Basic plan
+                                </p>
+                                <strong class="card-text" style="font-weight: 800; font-size: 25px;">
+                                    $19/mo
+                                </strong>
+                                <p class="card-text mt-2 fw-normal fs-6" style="margin-bottom: 31px; color: #3D3A41;">
+                                    or $199 yearly
+                                </p>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="pricing-item mb-3">
+                                    Unlimited members
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Unlimited feedback
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Weekly team Feedback Friday
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Custom Kudos +9 illustration
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Team feedback history
+                                </li>
+                            </ul>
+                            <button type="button" class="btn w-100 rounded-5" style="margin-top: 33px;">Get
+                                started</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 405px;">
+                        <div class="card-body">
+                            <div class="card-text-wrapper text-center">
+                                <p class="card-texts mb-2" style="font-size: 20px;">
+                                    Basic planBusiness plan
+                                </p>
+                                <strong class="card-text" style="font-weight: 800; font-size: 25px;">
+                                    $29/mo
+                                </strong>
+                                <p class="card-text mt-2 fw-normal fs-6" style="margin-bottom: 31px; color: #3D3A41;">
+                                    or $299 yearly
+                                </p>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="pricing-item mb-3">
+                                    Unlimited members
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Unlimited feedback
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Weekly team Feedback Friday
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Team feedback history
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Slack integration
+                                </li>
+                            </ul>
+                            <button type="button" class="btn bg-white w-100 rounded-5" style="margin-top: 33px;">Get
+                                started</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 405px;">
+                        <div class="card-body">
+                            <div class="card-text-wrapper text-center">
+                                <p class="card-texts mb-2" style="font-size: 20px;">
+                                    Business plan
+                                </p>
+                                <strong class="card-text" style="font-weight: 800; font-size: 25px;">
+                                    $49/mo
+                                </strong>
+                                <p class="card-text mt-2 fw-normal fs-6" style="margin-bottom: 31px; color: #3D3A41;">
+                                    or $499 yearly
+                                </p>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="pricing-item mb-3">
+                                    Unlimited members
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Unlimited feedback
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Weekly team Feedback Friday
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Team feedback history (30 items)
+                                </li>
+                                <li class="pricing-item mb-3">
+                                    Personal feedback history (6 items)
+                                </li>
+                            </ul>
+                            <button type="button" class="btn w-100 rounded-5" style="margin-top: 33px;">Get
+                                started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Finish -->
     </main>
     <!-- Site Main Finish -->
 

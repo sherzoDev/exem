@@ -1,0 +1,52 @@
+.card-texts {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.pricing-item::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/check.svg");
+  width: 17px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body {
+  padding: 31px;
+}
+
+.card {
+  border-color: transparent;
+}
+
+.card:hover {
+  border-color: #FF007A;
+}
+
+.btn {
+  border: 1px solid #FF007A;
+  color: #FF007A;
+}
+
+.btn:hover {
+  background: #FF007A !important;
+  color: white !important;
+}
+
+.pricing {
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 100% !important;
+  }
+
+  .pricing-card-wrapper {
+    width: 100%;
+    display: block !important;
+    text-align: center;
+  }
+}

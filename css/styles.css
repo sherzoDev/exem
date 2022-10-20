@@ -4,7 +4,7 @@
   --main-black-color: #000;
   --main-header-bg: linear-gradient(63.56deg, #6B50FF 48.13%, #A145FF 100%);
   --main-hero-btn-bg: #FF007A;
-  ---main-slick-text-color: #211F25;
+  --main-slick-text-color: #211F25;
   --main-slick-heading-color: #3D3A41;
   --main-article-bg-color: #6B50FF;
   --main-slick-bg-color: #F7F5FF;
@@ -18,7 +18,7 @@
   --main-black-color: #000;
   --main-header-bg: #1D1827;
   --main-hero-btn-bg: #FF94C7;
-  ---main-slick-text-color: #211F25;
+  --main-slick-text-color: #211F25;
   --main-slick-heading-color: #3D3A41;
   --main-article-bg-color: #6B50FF;
   --main-slick-bg-color: #F7F5FF;
@@ -799,7 +799,7 @@ ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: -0.01em;
-  color: var(---main-slick-text-color);
+  color: var(--main-slick-text-color);
 }
 
 .software-text {
@@ -818,7 +818,7 @@ ul {
   line-height: 120%;
   letter-spacing: -0.01em;
   text-align: center;
-  color: var(---main-slick-text-color);
+  color: var(--main-slick-text-color);
 }
 
 .software-item-text {
@@ -971,7 +971,7 @@ ul {
   margin-bottom: 16px !important;
   font-size: 36px;
   line-height: 36px;
-  color: var(---main-slick-text-color);
+  color: var(--main-slick-text-color);
 }
 
 .carusel-text {
@@ -1003,7 +1003,7 @@ ul {
 
 .carusel-item-text {
   margin-bottom: 30px;
-  color: var(---main-slick-text-color);
+  color: var(--main-slick-text-color);
 }
 
 .carusel-name::before {
@@ -1209,4 +1209,7 @@ ul {
     line-height: 150%;
     text-align: center;
   }
+}
+.footer {
+  background-color: var(--main-slick-text-color);
 }/*# sourceMappingURL=styles.css.map */

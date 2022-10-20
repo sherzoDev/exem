@@ -2,47 +2,79 @@
 :root {
   --main-white-color: #fff;
   --main-black-color: #000;
+  --main-header-bg: linear-gradient(63.56deg, #6B50FF 48.13%, #A145FF 100%);
+  --main-hero-btn-bg: #FF007A;
+  ---main-slick-text-color: #211F25;
+  --main-slick-heading-color: #3D3A41;
+  --main-article-bg-color: #6B50FF;
+  --main-slick-bg-color: #F7F5FF;
+  --main-bg-color: #F4FBFF;
+  --main-link-hover-color: #ffffff80;
+  --main-mbile-bg: #7E35EB;
 }
 
-/* MIXINS */ /* Fonts */
-/* open-sans-regular - latin */
+/* MIXINS */ /* nunito-300 - latin */
 @font-face {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-300 - latin */
-@font-face {
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 300;
-  src: local(""), url("../fonts/poppins-v20-latin-300.woff2") format("woff2"), url("../fonts/poppins-v20-latin-300.woff") format("woff");
+  src: local(""), url("../fonts/nunito-v25-latin-300.woff2") format("woff2"), url("../fonts/nunito-v25-latin-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* poppins-regular - latin */
+/* nunito-regular - latin */
 @font-face {
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff");
+  src: local(""), url("../fonts/nunito-v25-latin-regular.woff2") format("woff2"), url("../fonts/nunito-v25-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* poppins-600 - latin */
+/* nunito-500 - latin */
 @font-face {
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/nunito-v25-latin-500.woff2") format("woff2"), url("../fonts/nunito-v25-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-600 - latin */
+@font-face {
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff");
+  src: local(""), url("../fonts/nunito-v25-latin-600.woff2") format("woff2"), url("../fonts/nunito-v25-latin-600.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* poppins-700 - latin */
+/* nunito-700 - latin */
 @font-face {
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff");
+  src: local(""), url("../fonts/nunito-v25-latin-700.woff2") format("woff2"), url("../fonts/nunito-v25-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-800 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/nunito-v25-latin-800.woff2") format("woff2"), url("../fonts/nunito-v25-latin-800.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/roboto-v30-latin-300.woff2") format("woff2"), url("../fonts/roboto-v30-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /**
@@ -426,4 +458,125 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.hero-bg-img {
+  background: url("../images/header-bg.svg"), var(--main-header-bg);
+}
+
+.header-wrapper {
+  padding: 20px 0;
+}
+
+.header__logo {
+  z-index: 10000;
+}
+
+.scroll {
+  overflow: hidden;
+}
+
+.theme-btn-mobile,
+.theme-btn-desktop {
+  z-index: 10000;
+  background-image: url("../images/theme-btn.svg");
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+
+.theme-btn-desktop {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+.header__btn {
+  z-index: 100000;
+  display: block;
+  background-image: url("../images/menu-open.svg");
+  width: 26px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+}
+
+.show-bg .nav {
+  display: block;
+}
+
+.nav__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.nav__item {
+  margin-bottom: 40px;
+}
+
+.nav_link {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  background-color: var(--main-mbile-bg);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.show-bg .header__btn {
+  background-image: url("../images/menu-close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 21px;
+  height: 21px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    position: static;
+  }
+  .theme-btn-mobile {
+    display: none;
+  }
+  .theme-btn-desktop {
+    display: block;
+  }
+  .header__btn {
+    display: none;
+  }
+  .theme-btn-desktop {
+    z-index: 10000;
+    background-image: url("../images/theme-btn.svg");
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .theme-btn-mobile {
+    display: none;
+  }
+  .theme-btn-desktop {
+    display: block;
+  }
+  .header__btn {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

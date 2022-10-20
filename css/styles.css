@@ -810,6 +810,9 @@ ul {
   color: var(--main-hero-btn-bg);
 }
 
+.software-item:nth-child(3) {
+  margin: 0 auto;
+}
 .software-item:nth-child(3)::before {
   content: "";
   background-image: url("../images/software-bg-three.svg");

@@ -47,7 +47,7 @@
                             </ul>
                         </nav>
                         <button class="dark-btn border-0 bg-transparent d-none d-md-block">
-                            <img src="./images/theme-btn.svg" alt="">
+                            <img src="./images/theme-btn.svg" alt="tmeme">
                         </button>
                     </div>
                     <button class="header-burger border-0 bg-transparent d-sm-none">
@@ -75,7 +75,10 @@
                         <button type="button" class="btn border text-white watch-video">Watch Video</button>
                         <button type="button" class="text-white get-starter">Get Started</button>
                     </div>
-                    <div class="macbook-bg"></div>
+                    <div class="macimg d-flex justify-content-center">
+                        <img alt="Mackbook photo" class="img-fluid" src="./images/macbook.png"
+                            srcset="./images/macbook.png 1x, ./images/macbook@2x.png 2x">
+                    </div>
                 </div>
             </div>
         </section>
@@ -153,22 +156,23 @@
                     <div
                         class="text-center d-flex flex-column flex-column-reverse d-md-flex flex-md-row align-items-center justify-content-between">
                         <div class="text-md-start">
-                            <h3 class="">Easy Advance Protection</h3>
-                            <p class="mb-5">Use marketing automation to identify hot leads and email your sales team
+                            <h3 class="protection-title">Easy Advance Protection</h3>
+                            <p class="protection-text mb-5">Use marketing automation to identify hot leads and email
+                                your sales team
                                 telling them to follow up. Nurture and contact leads at the opportune time to maximize.
                             </p>
-                            <a class="text-decoration-none" href="">Read more</a>
+                            <a class="text-decoration-none protection-btn" href="#">Read more</a>
                         </div>
                         <img class="w-100 ms-md-5" src="./images/protection-bg.svg" alt="img">
                     </div>
                     <div
                         class="text-center d-flex flex-column flex-column-reverse d-md-flex align-items-center flex-md-row flex-md-row-reverse justify-content-between">
                         <div class="text-md-start">
-                            <h3 class="">Advance Protection Mode Easy </h3>
+                            <h3 class="protection-title">Advance Protection Mode Easy </h3>
                             <p class="mb-5">Use marketing automation to identify hot leads and email your sales team
                                 telling them to follow up. Nurture and contact leads at the opportune time to maximize.
                             </p>
-                            <a class="text-decoration-none" href="#">Read more</a>
+                            <a class="text-decoration-none protection-btn" href="#">Read more</a>
                         </div>
                         <img class="w-100" src="./images/protection-bg-bottom.svg" alt="img">
                     </div>
@@ -176,6 +180,63 @@
             </div>
         </section>
         <!-- Protection Finish -->
+        <!-- Carusel -->
+        <section class="carusel">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="carusel-title fw-bold my-0">Customer testimonials</h2>
+                    <p class="carusel-text my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <ul class="carusel-list list-unstyled mx-auto d-flex justify-content-center">
+                    <li class="carusel-item">
+                        <p class="carusel-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                        </p>
+                        <div class="carusel-name d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="carusel-item">
+                        <p class="carusel-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                        </p>
+                        <div class="carusel-name d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="carusel-item">
+                        <p class="carusel-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                        </p>
+                        <div class="carusel-name d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="carusel-item">
+                        <p class="carusel-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                        </p>
+                        <div class="carusel-name d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Carusel -->
         <!-- Pricing Start -->
         <section class="pricing">
             <div class="container">
@@ -245,7 +306,7 @@
                                 <li class="pricing-item mb-3">
                                     Weekly team Feedback Friday
                                 </li>
-                                <li class="pricing-item mb-3">  
+                                <li class="pricing-item mb-3">
                                     Team feedback history
                                 </li>
                                 <li class="pricing-item mb-3">
@@ -294,6 +355,32 @@
             </div>
         </section>
         <!-- Pricing Finish -->
+        <!-- Article -->
+        <article class="article">
+            <div class="container">
+                <div class="article-wrapper">
+                    <h2 class="article-tite text-center ">
+                        Get started a 15-days free trial
+                    </h2>
+                    <p class="article-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                    <form action="https://echo.htmlacademy.ru/courses" class="d-flex form mx-auto" method="POST">
+                       <div class="mx-auto d-flex">
+                        <input type="email" name="user_email" required placeholder="Enter your email" class="int form-control"
+                        aria-label="enter your email">
+                    <button type="submit" class="btn article-btn text-white">Submit</button>
+                       </div>
+                    </form>
+                    <span class="form-bottom">
+                        By clicking Sign Up you're confirming that you agree with our Terms and
+                        Conditions.
+                    </span>
+                </div>
+            </div>
+        </article>
+        <!-- Article -->
     </main>
     <!-- Site Main Finish -->
 

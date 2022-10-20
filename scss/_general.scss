@@ -22,6 +22,7 @@ img {
 
 body {
     @include sticky-footer;
+    overflow-x: hidden;
 }
 
 /* STICKY-FOOTER */

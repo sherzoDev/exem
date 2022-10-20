@@ -1,26 +1,21 @@
 .hero-bg-img {
   background: url("../images/header-bg.svg"), var(--main-header-bg);
-  background-position: calc(50% + 0px), calc(50% + 0px), calc(50% + 00px), calc(50% + 0px);
-}
-
-.main-wrap {
-  background-image: var(--header-bg);
 }
 
 .nav-open {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 0%;
   left: 0;
   right: 0;
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: var(--header-bg);
+  background: var(--main-mbile-bg);
 }
 
 .nav-list {
-  padding-top: 50px;
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +28,11 @@
 .nav-btn {
   text-align: center;
   padding: 10px 27px 10px 26px;
-  color: #DC7000;
+  color: var(--main-hero-btn-bg);
+}
+
+.site-logo {
+  z-index: 1000;
 }
 
 .nav-link {
@@ -49,6 +48,7 @@
 
 .header-burger {
   background-image: url("../images/menu-open.svg");
+  z-index: 10000;
   background-repeat: no-repeat;
   background-size: contain;
   width: 26px;
@@ -63,6 +63,10 @@
   display: none;
 }
 
+html .scroll {
+  overflow: hidden;
+}
+
 .header-open .header-burger {
   background-image: url("../images/menu-close.svg");
 }
@@ -71,7 +75,7 @@
   margin-left: 30px;
 }
 
-@media only screen and (min-width:575px) {
+@include mobile-first(575px) {
 
   .nav-open {
     display: block;

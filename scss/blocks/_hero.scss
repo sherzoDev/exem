@@ -1,0 +1,107 @@
+.hero-title {
+  font-family: 'Nunito';
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: var(--main-white-color);
+}
+
+.hero-text {
+  font-family: 'Nunito';
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--main-white-color);
+}
+
+.watch-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  max-width: 342px;
+  width: 100%;
+  height: 60px;
+  border-radius: 32px;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+
+  &::after {
+    content: "";
+    background-image: url("../images/watch-btn.svg");
+    width: 36px;
+    margin-left: 16px;
+    height: 36px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  ;
+}
+
+;
+
+.get-starter {
+  border: none;
+  background-color: var(--main-hero-btn-bg);
+  border-color: var(--main-hero-btn-bg);
+  max-width: 342px;
+  width: 100%;
+  height: 60px;
+  border-radius: 32px;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+  margin-bottom: 80px;
+}
+
+;
+
+.mac-img {
+  background-color: var(--main-white-color);
+}
+
+.hero-btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@include mobile-first(1024px) {
+
+  .hero-title-box {
+    margin: 0 auto;
+    width: 737px;
+  }
+
+  .hero-title {
+    margin-top: 157px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+  }
+
+  .hero-text-box {
+    margin: 0 auto;
+    width: 471px;
+  }
+
+  .hero-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+
+}

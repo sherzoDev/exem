@@ -13,3 +13,19 @@
     --main-link-hover-color: #ffffff80;
     --main-mbile-bg: #7E35EB;
 }
+
+.dark-mode {
+    :root {
+        --main-white-color: #fff;
+        --main-black-color: #000;
+        --main-header-bg: linear-gradient(63.56deg, #6B50FF 48.13%, #A145FF 100%);
+        --main-hero-btn-bg: #FF007A;
+        ---main-slick-text-color: #211F25;
+        --main-slick-heading-color: #3D3A41;
+        --main-article-bg-color: #6B50FF;
+        --main-slick-bg-color: #F7F5FF;
+        --main-bg-color: #F4FBFF;
+        --main-link-hover-color: #ffffff80;
+        --main-mbile-bg: #7E35EB;
+    }
+}
